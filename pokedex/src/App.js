@@ -1,17 +1,17 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Pokemon from "./pages/Pokemon";
 
-function App() {
-  //State
-
-  //Comportements
-
-
-  //Render
+const App = () => {
   return (
-    <div className="App">
-      <p>Welcome to Pokédex World</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pokémon" element={<Pokemon />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
