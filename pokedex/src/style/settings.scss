@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "font-title";
+    src: url(../assets/font/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: "font-pokemon";
+    src: url(../assets/font/Pokemon-Solid.ttf);
+}
+
+@font-face {
+    font-family: "font-texte";
+    src: url(../assets/font/Oswald-Medium.ttf);
+}
+
+$font-title: "font-title", sans-serif;
+$font-texte: "font-texte", serif;
+$font-pokemon: "font-pokemon", serif;
+
+$white: rgb(247, 244, 244);
+$color-1: #FF0000;
+$color-2: #CC0000;
+$color-3: #3B4CCA;
+$color-4: #FFDE00;
+$color-5: #B3A125;
+
+body {
+    background-image: url(../assets/img/background.png);
+    background-attachment: scroll;
+    font-family: $font-texte ;
+
+    * {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #root {
+        background: $white;
+        opacity: 0.7;
+        margin: 3em;
+    }
+}

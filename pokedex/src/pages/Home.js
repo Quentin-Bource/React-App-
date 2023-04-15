@@ -5,7 +5,6 @@ const Home = () => {
     return (
         <div>
             <Navigation />
-            <h1>Réact-Dex</h1>
         </div>
     );
 };

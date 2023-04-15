@@ -1,0 +1,38 @@
+.navigation {
+
+
+    h1 {
+        font-family: $font-pokemon;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    ul {
+        padding: 1.2em;
+        background-color: $color-2;
+
+        li {
+            font-size: 1.5em;
+            color: $white;
+            display: inline;
+            padding: 0.8em;
+            margin: 2em;
+            transition: 0.5s;
+
+            &:hover {
+                background: $color-1;
+            }
+
+        }
+
+
+    }
+
+}
+
+.nav-active {
+    li {
+        background-color: $color-1;
+    }
+
+}
