@@ -8,15 +8,17 @@ const Pokemon = () => {
 
     const [pokemon , setPokemon] = useState([]);
 
-    useEffect(()=> {
-        axios.get("https://api-pokemon-fr.vercel.app/api/v1/pokemon").then((res) => setPokemon(res.data))
-    }, [])
-
+    useEffect(() => {
+        axios.get("https://api-pokemon-fr.vercel.app/api/v1/pokemon").then((res) => {
+            const filteredPokemon = res.data.filter((poke) => poke.pokedexId <= 151 && poke.pokedexId > 0 );
+            setPokemon(filteredPokemon);
+        });
+    }, []);
     return (
         <div>
             <Navigation />
                     {pokemon.map((poke) => (
-                        <Card />
+                        <Card key={poke.pokedexId} poke={poke}/>
                     ))}
             <Footer />
         </div>
