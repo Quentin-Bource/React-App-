@@ -1,0 +1,32 @@
+.allCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+
+    .card {
+       
+        margin: 3.5vw;
+
+        h3{
+            font-size: 2vw;
+
+        }
+        img {
+            width: 15vw;
+            background-color: $grey;
+
+        }
+        h4 {
+            display: inline; 
+            margin-right: 0.8vw;
+            font-size: 1.3vw;
+           
+        }
+        p {
+           
+            font-size: 1vw;
+            display: inline;
+            
+        }
+    }
+}

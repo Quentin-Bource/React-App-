@@ -17,9 +17,12 @@ const Pokemon = () => {
     return (
         <div>
             <Navigation />
+                    <div className='allCard'>
                     {pokemon.map((poke) => (
                         <Card key={poke.pokedexId} poke={poke}/>
                     ))}
+                    </div>
+                    
             <Footer />
         </div>
     );
