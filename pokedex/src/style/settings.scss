@@ -17,6 +17,7 @@ $font-title: "font-title", sans-serif;
 $font-texte: "font-texte", serif;
 $font-pokemon: "font-pokemon", serif;
 
+$whiteback: rgb(247, 244, 244, 0.7);
 $white: rgb(247, 244, 244);
 $color-1: #FF0000;
 $color-2: #CC0000;
@@ -26,17 +27,19 @@ $color-5: #B3A125;
 
 body {
     background-image: url(../assets/img/background.png);
-    background-attachment: scroll;
+    background-size: cover;
+    background-attachment:fixed;
     font-family: $font-texte ;
 
     * {
         text-decoration: none;
         color: #000;
+        margin: 0;
+        padding: 0;
     }
 
     #root {
-        background: $white;
-        opacity: 0.7;
-        margin: 3em;
+        background: $whiteback;
+        margin: 3vw;
     }
 }

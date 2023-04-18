@@ -1,0 +1,32 @@
+.footer {
+
+    
+    h3{
+        font-size: 2.5vw;
+        font-family: $font-pokemon;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        
+       
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            margin: 3vw;
+            padding: 3vw;
+
+            opacity: 1;
+            list-style: none;
+            img{
+                
+                width: 3vw;
+            }
+        }
+    }
+}

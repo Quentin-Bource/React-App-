@@ -14,8 +14,14 @@ const Navigation = () => {
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>Accueil</li>
                 </NavLink>
+                <NavLink to="/pokemon" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    <li>Pokémon</li>
+                </NavLink>
+                <NavLink to="/table" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    <li>Table des Types</li>
+                </NavLink>
                 <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                    <li>About</li>
+                    <li>À propos</li>
                 </NavLink>
             </ul>
 

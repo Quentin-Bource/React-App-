@@ -1,22 +1,21 @@
 .navigation {
-
+    text-align: center;
 
     h1 {
         font-family: $font-pokemon;
-        text-align: center;
-        font-size: 3em;
+        font-size:5vw;
     }
 
     ul {
-        padding: 1.2em;
+        padding: 1vw;
         background-color: $color-2;
 
         li {
-            font-size: 1.5em;
+            font-size: 2vw;
             color: $white;
             display: inline;
-            padding: 0.8em;
-            margin: 2em;
+            padding: 1vw;
+            margin: 5vw;
             transition: 0.5s;
 
             &:hover {
