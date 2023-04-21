@@ -27,7 +27,7 @@ const Home = () => {
                 <br />
                 Merci beaucoup pour votre visite et à bientôt !</p>
 
-            <div>
+            <div className='allRandomPoke'>
                 <RandomPoke pokemon={randomPokemon} />
             </div>
 
