@@ -18,13 +18,15 @@ const Pokemon = () => {
     return (
         <div>
             <Navigation />
-            <NavLink to="/fiche">
+            
                 <div className='allCard'>
                     {pokemon.map((poke) => (
+                        <NavLink key={poke.pokedexId} to={`/fiche/${poke.pokedexId}`}>
                         <Card key={poke.pokedexId} poke={poke} />
+                        </NavLink>
                     ))}
                 </div>
-            </NavLink>
+            
             <Footer />
         </div>
     );

@@ -7,15 +7,13 @@ import FichePoke from "./pages/FichePoke";
 
 const App = () => {
 
-
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pokemon" element={<Pokemon />} />
-        <Route path="/fiche" element={<FichePoke />} />
+        <Route path="/fiche/:id" element={<FichePoke />} />
         <Route path="/table" element={<Table />} />
         <Route path="*" element={<Home />} />
       </Routes>

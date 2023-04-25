@@ -1,8 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const RandomPoke = ({ pokemon }) => {
 
     return (
+        <NavLink to={`/fiche/${pokemon.pokedexId}`}>
         <div className='randomPoke'>
 
             {pokemon && pokemon.sprites && pokemon.sprites.regular &&
@@ -80,6 +82,7 @@ const RandomPoke = ({ pokemon }) => {
 
 
         </div>
+        </NavLink>
     );
 };
 

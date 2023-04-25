@@ -1,0 +1,113 @@
+@keyframes scale-up-hor-left {
+    0% {
+        transform: scaleX(0.2);
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+}
+
+.AllFichePoke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+
+    .fichePokemon {
+        display: grid;
+        grid-template-columns: repeat(20vw, 25vw);
+        grid-template-rows: 1fr;
+        border-style: groove;
+        border-radius: 2vw;
+        width: 60vw;
+        padding: 3vw;
+        background: $grey ;
+
+        .sprite {
+            grid-area: 1 / 1 / 2 / 2;
+            width: 25vw;
+        }
+
+        .pokeInfo {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 30vw;
+            font-size: 1.3vw;
+
+            p {
+                padding-bottom: 1.5vw;
+
+            }
+
+            .types {
+                display: flex;
+                justify-content: flex-start;
+
+            }
+
+            img {
+                padding-left: 1vw;
+                width: 2.5vw;
+            }
+
+
+            li {
+                display: grid;
+                width: 33vw;
+                grid-template-columns: 8vw 18vw 7vw;
+                grid-template-rows: 1fr;
+
+
+                .stat-bar {
+                    grid-area: 1 / 2 / 2 / 3;
+                    margin-top: 0.8vw;
+                    height: 0.6vw;
+                    width: 7vw;
+
+                    .value {
+                        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+                        height: 100%;
+                        grid-area: 1 / 3 / 2 / 4;
+                    }
+
+                    &.very-low .value {
+                        background-color: red;
+                    }
+
+                    &.low .value {
+                        background-color: orange;
+                    }
+
+                    &.medium .value {
+                        background-color: #1d7f24;
+                    }
+
+                    &.high .value {
+                        background-color: #5ec465;
+                    }
+
+                    &.very-high .value {
+                        background-color: #1ca8dd;
+                    }
+
+                    &.max .value {
+
+                        background-color: #99dcf5;
+                    }
+
+
+                }
+
+            }
+
+
+
+
+        }
+    }
+
+
+
+}
