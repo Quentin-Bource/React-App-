@@ -1,0 +1,25 @@
+.switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    button {
+    font-size: 2vw;
+    color: $white;
+    background-color: $color-2;
+    padding: 1vw;
+    border-radius: 5vw;
+    margin: 2vw;
+    display: inline;
+    transition: 0.5s;
+    border-style: none;
+    
+
+    &:hover {
+        background: $color-1;
+    }
+    
+    
+
+}
+}

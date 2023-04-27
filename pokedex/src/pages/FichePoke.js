@@ -3,7 +3,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import AllFichePoke from '../components/AllFichePoke'
+import AllFichePoke from '../components/AllFichePoke';
+import Switch from '../components/Switch';
+
 
 
 const FichePoke = () => {
@@ -22,10 +24,16 @@ const FichePoke = () => {
         <div>
             <Navigation />
             
-            <div className='AllFichePoke'>
-                <AllFichePoke  pokemon={fichePokemon} />
+            <div  className='AllFichePoke'>
+                
+                <AllFichePoke key={fichePokemon.pokedexId}  pokemon={fichePokemon} />
 
             </div>
+
+            <div>
+                <Switch key={fichePokemon.pokedexId}  pokemon={fichePokemon} />
+            </div>
+            
             
 
             <Footer />

@@ -25,6 +25,24 @@ $color-2: #CC0000;
 $color-3: #3B4CCA;
 $color-4: #FFDE00;
 $color-5: #B3A125;
+$normal: #A8A878;
+$feu: #F08030;
+$eau: #6890F0;
+$elec: #F8D030;
+$plante: #78C850;
+$glace: #98D8D8;
+$combat:#C03028;
+$poison:#A040A0;
+$sol: #E0C068;
+$vol: #A890F0;
+$psy: #F85888;
+$insecte: #A8B820;
+$roche: #B8A038;
+$spectre: #705898;
+$dragon: #7038F8;
+$teneb: #705848;
+$acier: #B8B8D0;
+$fee: #EE99AC;
 
 body {
     background-image: url(../assets/img/background.png);
@@ -39,8 +57,16 @@ body {
         padding: 0;
     }
 
+    
+
     #root {
         background: $whiteback;
         margin: 3vw;
     }
+}
+
+.dark-mode {
+    background-image: url(../assets/img/backgrounddark.png);
+    
+
 }

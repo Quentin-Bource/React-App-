@@ -4,10 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 
 const Navigation = () => {
+
     return (
-        <div className='navigation'>
+
+          <div className='navigation' >
+            
             <NavLink to="/">
                 <h1>Réact-Dex</h1>
+                
             </NavLink>
 
             <ul>
