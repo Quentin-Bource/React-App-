@@ -8,22 +8,22 @@ import { NavLink } from 'react-router-dom';
 const Pokemon = () => {
 
     const [pokemon, setPokemon] = useState([]);
-    const [selectedRadio, setSelectedRadio] = useState("")
-    const radios = [1 , 2];
+    const [selectedRadio, setSelectedRadio] = useState("1")
+    const radios = ["1" , "2", "3", "4", "5", "6", "7", "8", "9"];
     
 
     useEffect(() => {
         axios.get("https://api-pokemon-fr.vercel.app/api/v1/pokemon").then((res) => {
-            const filteredPokemon = res.data.filter((poke) => poke.pokedexId <= 165 && poke.pokedexId > 0);
-            setPokemon(filteredPokemon);
+            setPokemon(res.data);
         });
     }, []);
+
     return (
         <div>
             <Navigation />
 
-                {radios.map((gen) => (
-                    <li>
+                {radios.map((gen)  => (
+                    <li key={gen} className='filtre'>
                         <input type="radio" id={gen} name='genfiltre' onChange={(e) => setSelectedRadio(e.target.id)} />
                         <label htmlFor={gen}>Génération {gen}</label>
 
@@ -32,11 +32,12 @@ const Pokemon = () => {
             
                 <div className='allCard'>
                     {pokemon
-                    // .filter((poke) => poke.generation[0].includes(selectedRadio))
+                    .filter((poke) => poke.generation === parseInt(selectedRadio))
                     .map((poke) => (
                         <NavLink key={poke.pokedexId} to={`/fiche/${poke.pokedexId}`}>
                         <Card key={poke.pokedexId} poke={poke} />
                         </NavLink>
+                        
                     ))}
                 </div>
             

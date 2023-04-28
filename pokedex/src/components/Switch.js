@@ -5,12 +5,12 @@ const Switch = ({ pokemon }) => {
     return (
         <div className='switch'>
 
-            <NavLink key={pokemon.pokedexId} to={`/fiche/${pokemon.pokedexId -1}`} > 
+            <NavLink  to={`/fiche/${pokemon.pokedexId -1}`} > 
 
                 <button className='left'>Précedent</button>
             </NavLink>
 
-            <NavLink key={pokemon.pokedexId} to={`/fiche/${pokemon.pokedexId +1}`} > 
+            <NavLink  to={`/fiche/${pokemon.pokedexId +1}`} > 
 
                 <button className='right'>Suivant</button>
             </NavLink>

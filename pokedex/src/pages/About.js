@@ -6,10 +6,14 @@ const About = () => {
     return (
         <div>
             <Navigation />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos iste incidunt repellat ea explicabo at odio, nobis accusamus eum veritatis, doloremque officiis eaque quidem perspiciatis expedita assumenda tenetur? Aperiam impedit saepe architecto ab doloribus placeat expedita consequuntur. Nulla pariatur dignissimos laboriosam amet voluptatibus repudiandae sequi velit culpa, vero laudantium iste nemo modi aliquid porro molestias architecto enim blanditiis? Fuga cum vitae reprehenderit atque architecto aliquid consequuntur iste. Totam fuga facilis temporibus commodi excepturi exercitationem aut atque maxime eius. Aperiam vitae quisquam quaerat eveniet, repellendus dolorum. Vitae corrupti minima fugit similique totam harum beatae libero magnam tempore, voluptate suscipit quia?</p>
-            <br />
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At illo voluptatum reprehenderit aliquam tempore corrupti deserunt, quaerat ipsum omnis quae dolor corporis sunt debitis quasi quos repudiandae doloribus, ipsa laboriosam.</p>
-            <Footer />
+            <div className='about'>
+            <p>Mon site Pokedex React est un projet que j'ai travaillé pendant un certain temps, étant donné que c'était mon premier projet utilisant React. L'objectif de ce site est de permettre aux utilisateurs de voir les différentes caractéristiques de chaque Pokémon en utilisant l'API de ce site: <a href="https://api-pokemon-fr.vercel.app/">https://api-pokemon-fr.vercel.app/</a>.</p>
+            <p>Le site comporte plusieurs fonctionnalités, telles que la table des types, le Pokedex de chaque région et une fiche détaillée pour chaque Pokémon. J'ai essayé de m'assurer que toutes les informations étaient présentées de manière claire et organisée afin que les utilisateurs puissent trouver ce qu'ils cherchent rapidement et facilement.</p>
+            <p>En cours de route, j'ai rencontré quelques difficultés avec les filtres et le design général du site, qui n'est pas mon point fort. Cependant, j'ai appris beaucoup de choses en travaillant sur ce projet et j'ai pu améliorer mes compétences en développement web.</p>
+            <p>Mon objectif principal en créant ce site était de me familiariser avec une nouvelle technologie tout en travaillant sur quelque chose qui m'intéressait vraiment. L'univers Pokémon a été une grande partie de ma vie depuis mon enfance, et je voulais créer quelque chose qui rende hommage à cela.</p>
+            <p>Merci de votre visite sur mon site, j'espère que vous avez apprécié votre expérience.</p>
+            </div> 
+             <Footer />
 
         </div>
     );
