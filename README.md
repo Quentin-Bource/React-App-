@@ -16,4 +16,4 @@ npm start
 Cela ouvrira le site web dans votre navigateur à l'adresse http://localhost:3000/.
 
 ### Contribuer
-Je ne prévois pas de continuer à travailler sur ce projet, car je considère qu'il est maintenant achevé. Cependant, si vous souhaitez y contribuer ou l'utiliser pour vos propres projets, n'hésitez pas à le faire. Le code est disponible sur GitHub à l'adresse suivante : https://github.com/votre-nom/pokedex.
+Je ne prévois pas de continuer à travailler sur ce projet, car je considère qu'il est maintenant achevé. Cependant, si vous souhaitez y contribuer ou l'utiliser pour vos propres projets, n'hésitez pas à le faire.
