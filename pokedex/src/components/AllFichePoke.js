@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AllFichePoke = ({ pokemon }) => {
-    console.log(pokemon)
+    
     return (
         <div className='fichePokemon'>
 
