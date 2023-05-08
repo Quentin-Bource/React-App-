@@ -5,6 +5,8 @@ Pokedex est un site web développé avec la technologie React qui permet de visu
 
 J'ai travaillé sur ce projet pendant un certain temps, car c'était mon premier projet en React. J'ai rencontré quelques difficultés avec les filtres et le design général du site, qui n'est vraiment pas mon point fort. Cependant, j'ai réussi à surmonter ces obstacles et à créer un site web fonctionnel qui, je l'espère, sera utile pour tous les fans de Pokemon.
 
+<img width="1506" alt="Accueil site" src="https://github.com/Quentin-Bource/React-App-/blob/main/Accueil.png">
+
 ### Motivation
 J'ai été motivé à créer ce site web parce que j'avais besoin d'apprendre une nouvelle technologie et que j'ai toujours été passionné par l'univers Pokemon depuis mon enfance. Ce projet était donc un moyen pour moi de combiner mes intérêts personnels avec mes objectifs professionnels.
 
